@@ -1,0 +1,133 @@
+.select-container {
+  position: relative;
+  width: 300px;
+  font-family: Arial, sans-serif;
+}
+
+.select-container.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.select-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.select-header .arrow {
+  margin-left: 8px;
+}
+
+.select-header .select-values {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.select-tag {
+  background-color: #e6f7ff;
+  color: #1890ff;
+  padding: 2px 6px;
+  margin-right: 4px;
+  margin-bottom: 4px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.select-tag-remove {
+  margin-left: 4px;
+  cursor: pointer;
+}
+
+.clear-button {
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.select-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 2px;
+  z-index: 10;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.select-dropdown .loading {
+  padding: 8px;
+  text-align: center;
+}
+
+.select-search {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+}
+
+.select-options {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.select-option {
+  padding: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.select-option.disabled {
+  color: #ccc;
+  pointer-events: none;
+}
+
+.select-option:hover {
+  background-color: #f0f0f0;
+}
+
+.option-icon {
+  margin-right: 8px;
+}
+
+.option-avatar {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.option-extra {
+  margin-left: auto;
+}
+
+.option-check {
+  margin-left: 8px;
+  color: green;
+}
+
+.option-elms {
+  display: flex;
+  align-items: center;
+  row-gap: 8px;
+}
+
+.create-option {
+  font-weight: bold;
+  color: #1890ff;
+}
